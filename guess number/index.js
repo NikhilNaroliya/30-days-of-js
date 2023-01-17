@@ -5,6 +5,14 @@ let highscore=0;
 const number=Math.trunc(Math.random()*20)+1;
 document.querySelector('.number').textContent=number;
 
+
+//  for again button
+document.querySelector('.btn-again').addEventListener('click',function(){
+    document.querySelector('.message').textContent='start guessing';
+    document.querySelector('.highscore').textContent=0;
+    document.querySelector('.score').textContent=0;
+
+})
 document.querySelector('.check').addEventListener('click',function(){
     const guess=Number(document.querySelector('.guess').value)
     console.log(guess);
