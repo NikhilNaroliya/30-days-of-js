@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(100, 237, 223);
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+.overlay{
+    border: 2px solid white;
+    width: 7rem;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: cyan;
+
+}
+.show-modal{
+    background-color: rgb(87, 176, 227);
+    border-radius: 1rem;
+    margin: 1rem;
+}
+.hidden{
+    background-color: darkcyan;
+}
