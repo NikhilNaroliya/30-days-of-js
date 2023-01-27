@@ -178,7 +178,7 @@ firstname = str.slice(0, index);
 let upp = lastname[0].toUpperCase();
 lastname = upp + lastname.slice(1)
 
-let ans;
+let ans='';
  let space=''.padStart(12,' ');
  let starString=' '
   for(let t=0;t<i+1;t++)
@@ -186,7 +186,8 @@ let ans;
      starString+='*';
    }
 ans = firstname + lastname;
-console.log(ans +space+ starString)
+console.log(ans.padEnd(20,' ')+starString)
+// console.log(ans + starString)
 
 
 }
