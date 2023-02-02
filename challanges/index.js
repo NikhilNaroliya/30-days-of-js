@@ -158,41 +158,76 @@
               // function to  convert underscore to camelCase
 
 // nikhil_naroliya to nikhilNaroliya
- function tocameCase(str,i)
-{
-let lastname;
-let firstname;
+//  function tocameCase(str,i)
+// {
+// let lastname;
+// let firstname;
 
 
-// console.log(str)
-index = str.indexOf('_')
+// // console.log(str)
+// index = str.indexOf('_')
 
 
-str.replace('_', '');
+// str.replace('_', '');
 
-lastname = str.slice(index + 1);
+// lastname = str.slice(index + 1);
 
-firstname = str.slice(0, index);
-
-
-let upp = lastname[0].toUpperCase();
-lastname = upp + lastname.slice(1)
-
-let ans='';
- let space=''.padStart(12,' ');
- let starString=' '
-  for(let t=0;t<i+1;t++)
-   {
-     starString+='*';
-   }
-ans = firstname + lastname;
-console.log(ans.padEnd(20,' ')+starString)
-// console.log(ans + starString)
+// firstname = str.slice(0, index);
 
 
-}
-   const arr=['nikhil_naroliya','camel_case','raju_shrivastav','chotu_yadav']
-    for(let i=0;i<4;i++)
-     {
-             tocameCase(arr[i],i)
-     }
+// let upp = lastname[0].toUpperCase();
+// lastname = upp + lastname.slice(1)
+
+// let ans='';
+//  let space=''.padStart(12,' ');
+//  let starString=' '
+//   for(let t=0;t<i+1;t++)
+//    {
+//      starString+='*';
+//    }
+// ans = firstname + lastname;
+// console.log(ans.padEnd(20,' ')+starString)
+// // console.log(ans + starString)
+
+
+// }
+//    const arr=['nikhil_naroliya','camel_case','raju_shrivastav','chotu_yadav']
+//     for(let i=0;i<4;i++)
+//      {
+//              tocameCase(arr[i],i)
+//      }
+
+
+           // challenge to user input from user throgh prompt and  increase the index value based on user input
+          
+           
+            // const poll={
+            //   question:'what is your fav prog language ?',
+            //   option:['0:js','1:python','2:cpp','3:rust'],
+
+            //   answers:new Array(4).fill(0),
+
+            //   registerNewAns(){
+            //     const answer=Number(prompt(`${this.question}\n ${this.option.join('\n)}`
+            //   }
+
+            // }
+            
+
+// Coding Challenge #2
+
+/* 
+This is more of a thinking challenge than a coding challenge 🤓
+Take the IIFE below and at the end of the function, attach an event listener that changes the color of the selected h1 element ('header') to blue, each time the BODY element is clicked. Do NOT select the h1 element again!
+And now explain to YOURSELF (or someone around you) WHY this worked! Take all the time you need. Think about WHEN exactly the callback function is executed, and what that means for the variables involved in this example.
+GOOD LUCK 😀
+*/
+
+
+(function () {
+  const header = document.querySelector('h1');
+  header.style.color = 'red';
+  document.querySelector('body').addEventListener('click', function () {
+    header.style.color = 'blue';
+  });
+})();
