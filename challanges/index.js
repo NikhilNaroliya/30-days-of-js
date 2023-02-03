@@ -224,10 +224,46 @@ GOOD LUCK 😀
 */
 
 
-(function () {
-  const header = document.querySelector('h1');
-  header.style.color = 'red';
-  document.querySelector('body').addEventListener('click', function () {
-    header.style.color = 'blue';
-  });
-})();
+// (function () {
+//   const header = document.querySelector('h1');
+//   header.style.color = 'red';
+//   document.querySelector('body').addEventListener('click', function () {
+//     header.style.color = 'blue';
+//   });
+// })();
+
+   // <-----coding challenge from arrays section------>
+    const Juliaowner1=[1,2,2,5,3,5,4];
+    const Kateowner2=[2,2,5,5,1,6,7];
+
+     const Juliaowner2=Juliaowner1;  /// created a copy
+      
+     console.log(Juliaowner1);
+     Juliaowner2.splice(0,1)   // after 0 delete 1 element
+     Juliaowner2.splice(-2);
+
+     console.log(Juliaowner2);
+
+      function checkDogsAge(Juliaowner1,Kateowner2)
+     {
+            Juliaowner2.forEach(element => {
+               if(element>3)
+                {
+                  console.log('the dog is adult')
+                }
+                else
+                 console.log('the dog is still a  puppy')
+                });
+
+               console.log('--------For kate----------') 
+               Kateowner2.forEach(element => {
+                if(element>3)
+                 {
+                   console.log('the dog is adult')
+                 }
+                 else
+                  console.log('the dog is still a  puppy')
+                 });
+     }
+
+     checkDogsAge(Juliaowner2,Kateowner2);
