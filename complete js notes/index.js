@@ -359,4 +359,126 @@
                         //  work.call(obj2,' nasfsdsf')
 
              //apply method 
-             // it is same as call method just it takes array list with refereced object           
+             // it is same as call method just it takes array list with refereced object
+             
+          // ----------------  // bind method --------------
+              //it return a new function
+                     // in this method object jiska reference dene hai usko pahle hi pass kar diya jata hai and while calling the function only values are passed
+                     //example
+
+            //          obj1={
+            //           name:'kumar',
+            //           lastname:'naroliya',
+            //           work(working){
+            //             console.log('SDE '+working)
+            //           }
+            //          }        
+                    
+            //          obj2={
+            //           name:'sushrut',
+            //           lastname:'sharma',
+            
+            //          }  
+            // const obj1binding=obj1.work.bind(obj2)
+
+            // // yaha par obj1 ki method ko bind kiya usme obj2 ko pass kiya jisse work method obj2 ke liye bhi kam karegi
+
+            //     obj1binding('at frontend');
+              
+
+//-------------------------------------------------------------------------------------------
+
+             //  arrays 
+
+
+             let arr=['a','b','c','d','e'];
+       //            ['1', '2', '3', '4', '5']
+
+                       //slice() method
+
+       //       console.log(arr.slice(1));  //it is one based indexing (4) ['b', 'c', 'd', 'e']
+       //       console.log(arr.slice(2,3)) //isme first vale ko include nahi kia jata  par last vale ko kiya jata hai
+       //       console.log(arr.slice(1,4))
+       // //       ['b', 'c', 'd']
+       //     console.log(arr.slice(0))
+
+                      //splice() method
+
+            //it mutates original array
+            
+       //      console.log(arr.splice(2))
+       //        // ['c', 'd', 'e']
+       //        console.log('original array '+  arr)
+       //        // original array a,b
+             
+              //    arr.splice(1,2)// it means after 1 deleted 2 elements
+ 
+    
+              //   reverse method
+
+              // console.log(arr.reverse()); //it mutates original array
+
+
+              //concat method
+              // const letters=arr.concat('hi')
+              // console.log(letters)
+
+              //   // join method
+
+              //   console.log(letters.join(''))
+
+
+
+            // looping the arrays  using forEach and for of
+            const movements=[200,450,23,-434,-232,23455,-234];
+            // in order to get index number we need entries method
+
+       //      for(const [i,movement] of movements.entries()){
+       //         if(movement>0)
+       //          {
+       //               console.log(`movement ${i+1} You deposited ${movement}`)
+                      
+       //          }
+       //          else{
+       //               console.log(`movement ${i+1} You withdraw ${Math.abs(movement)}`)
+       //          }
+       //      }
+
+              //---------------forEach-------------
+              
+                                   //   ( value,index)
+              // movements.forEach(function(movement,i){
+              //        if(movement>0)
+              //         {
+              //              console.log(`movement ${i+1} You deposited ${movement}`)
+                            
+              //         }
+              //         else{
+              //              console.log(`movement ${i+1} You withdraw ${Math.abs(movement)}`)
+              //         }
+              //     })
+           
+              //---------------forEach on maps and sets -----------
+
+              // const currencies=new Map([
+              //        ['ind','indian rs'],
+              //        ['name','nik'],
+              //        ['age',22],
+              // ]);
+
+              //  currencies.forEach(function(value,key){
+              //        console.log(`${key}:${value}`);
+              //  })
+
+              //  ----------------sets------------------
+
+                  //it does not hold key value pair bt the unique values the key and values hold the same meaning in the sets 
+
+              //     const curr=new Set(
+              //        ['ind','indian rs','ind','indian rs']
+                    
+              // );
+                 
+              // curr.forEach(function(value){
+              //        console.log(`${value}`);
+              //  })
