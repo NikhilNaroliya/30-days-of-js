@@ -232,38 +232,77 @@ GOOD LUCK 😀
 //   });
 // })();
 
-   // <-----coding challenge from arrays section------>
-    const Juliaowner1=[1,2,2,5,3,5,4];
-    const Kateowner2=[2,2,5,5,1,6,7];
+            // <-----coding challenge from arrays section------>
 
-     const Juliaowner2=Juliaowner1;  /// created a copy
+
+    // const Juliaowner1=[1,2,2,5,3,5,4];
+    // const Kateowner2=[2,2,5,5,1,6,7];
+
+    //  const Juliaowner2=Juliaowner1;  /// created a copy
       
-     console.log(Juliaowner1);
-     Juliaowner2.splice(0,1)   // after 0 delete 1 element
-     Juliaowner2.splice(-2);
+    //  console.log(Juliaowner1);
+    //  Juliaowner2.splice(0,1)   // after 0 delete 1 element
+    //  Juliaowner2.splice(-2);
 
-     console.log(Juliaowner2);
+    //  console.log(Juliaowner2);
 
-      function checkDogsAge(Juliaowner1,Kateowner2)
+    //   function checkDogsAge(Juliaowner1,Kateowner2)
+    //  {
+    //         Juliaowner2.forEach(element => {
+    //            if(element>3)
+    //             {
+    //               console.log('the dog is adult')
+    //             }
+    //             else
+    //              console.log('the dog is still a  puppy')
+    //             });
+
+    //            console.log('--------For kate----------') 
+    //            Kateowner2.forEach(element => {
+    //             if(element>3)
+    //              {
+    //                console.log('the dog is adult')
+    //              }
+    //              else
+    //               console.log('the dog is still a  puppy')
+    //              });
+    //  }
+
+    //  checkDogsAge(Juliaowner2,Kateowner2);
+
+    //   <-----------array challenge dog ->human age ------------->
+       
+    let humanAge=[]; 
+    
+   const dogages=[1,2,3,4,2,3,2,4,4,2,7];
+
+    function calcAverageHumanAge(da)
      {
-            Juliaowner2.forEach(element => {
-               if(element>3)
-                {
-                  console.log('the dog is adult')
-                }
-                else
-                 console.log('the dog is still a  puppy')
-                });
 
-               console.log('--------For kate----------') 
-               Kateowner2.forEach(element => {
-                if(element>3)
+         dogages.forEach(element => {
+
+                if(element<=2)
                  {
-                   console.log('the dog is adult')
+                       humanAge.push(element*2);
+                  
                  }
-                 else
-                  console.log('the dog is still a  puppy')
-                 });
+                 else 
+                  {
+                        humanAge.push(element*4+16);
+                  }
+         });
      }
+     
+     calcAverageHumanAge(dogages)
+     console.log(humanAge)
+      
+      let newAges=[];
 
-     checkDogsAge(Juliaowner2,Kateowner2);
+       newAges.push(humanAge.filter(function(value){
+            return value>18
+       }))
+       console.log('new ages of dog',newAges)
+
+        
+
+      

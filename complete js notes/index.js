@@ -482,3 +482,41 @@
               // curr.forEach(function(value){
               //        console.log(`${value}`);
               //  })
+
+
+
+ //<------- data transformation with map ,filter and reduce------->
+   /*  
+      map return a new array containing the result of applying an operation on all original elements
+      . it also have access to index,whole array and values.
+
+      filter return a new array containing the array elements that passed  a specific test condition
+
+      reduce reduces all array elements down to one  single value
+    */
+
+       //   <-------------map method example------------->
+//         const arr1=[1,2,23,454,21431]
+
+//          const newarr1=arr1.map((value,index)=>{
+//                return value*3;
+//  })
+
+//     console.log(newarr1)
+      
+
+  //<----------------------filter  method------------->
+   
+              //   const deposit=movements.filter(function(mov){
+              //        return mov>0;
+              //   })
+              //  console.log(deposit)
+
+              //   const withdrawal=movements.filter(function(mov){
+              //        return mov<0
+              //   })
+              //   console.log(withdrawal)
+
+       //-----------------reduce method ex----------->
+       
+     
