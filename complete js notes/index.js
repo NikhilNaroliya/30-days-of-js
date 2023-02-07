@@ -520,3 +520,37 @@
        //-----------------reduce method ex----------->
        
      
+//                learning dates in js
+
+   const future=new Date(2039,10,19,15,11)
+    console.log(future);
+
+    console.log(future.getFullYear())
+    console.log(future.getMonth())
+    console.log(future.getTime())
+    console.log(future.getMinutes())
+
+    // to see the present day we use
+
+    console.log(new Date())
+     // passing string in the  new date funtion
+     console.log(new Date('october 25,1999')) //monday 
+
+     // -------------set timeout--------->
+ // it takes a callback function ,we can also pass extra parameters in it 
+     const ingredients=['garlic','onion']
+      
+     const pizzatimer=setTimeout((ing1,ing2)=>console.log(`Here is your pizza with ${ing1} and ${ing2}`),3000,...ingredients)
+
+        /// to clear time out we use clearTimeout
+
+        if(ingredients.includes('ginger'))clearTimeout(pizzatimer)
+
+        console.log('waiting for the pizza')
+
+        // set interval------------>
+        
+       //  setInterval(function(){
+       //        const now=new Date()
+       //        console.log(now)
+       //  },3000)
